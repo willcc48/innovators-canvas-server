@@ -31,7 +31,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-var allowedOrigins = ['https://innovators-canvas-backend.herokuapp.com/'];
+var allowedOrigins = ['https://innovators-canvas.herokuapp.com/'];
 app.use(cors({
   origin: function(origin, callback){
     // allow requests with no origin 
